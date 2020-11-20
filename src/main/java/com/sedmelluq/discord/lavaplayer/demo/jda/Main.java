@@ -42,11 +42,14 @@ public class Main extends ListenerAdapter {
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/d5/s-P8woN9dZgic?in=ismail-tosun-354492633/sets/dbot/s-nIKhuSChtIg"),
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/d6-1/s-iAV5AF0IofR"),
           new DSes(4,"https://soundcloud.com/ismail-tosun-354492633/secret-discord/s-CqFAv8YictQ"),
-          new DSes(8,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201119-01251807dvr-trim-online-audio-convertercom/s-q6bNNzWbUXp")
+          new DSes(8,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201119-01251807dvr-trim-online-audio-convertercom/s-q6bNNzWbUXp"),
+          new DSes(5,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-01531703dvr-trim-online-audio-convertercom/s-ot9Df3iI0Af"),
+          new DSes(4,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02124405dvr-trim-online-audio-convertercom/s-YrRgtZf67n6"),
+          new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02153706dvr-trim-online-audio-convertercom/s-5KhYz73LO2B")
   };
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.Lmwg8h0ysFkEY9EwIDmWdptFW-A", GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.2p71j1huJBdHIWT5TBeBByVX1UY", GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.ONLINE)
            // .setActivity(Activity.watching("Cennet Mahallesi"))
