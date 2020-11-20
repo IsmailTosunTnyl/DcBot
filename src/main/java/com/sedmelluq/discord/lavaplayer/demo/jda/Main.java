@@ -46,7 +46,7 @@ public class Main extends ListenerAdapter {
   };
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.UoI7mk1Hle6iZ2j62FQz1z15Ne4", GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.Lmwg8h0ysFkEY9EwIDmWdptFW-A", GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.ONLINE)
            // .setActivity(Activity.watching("Cennet Mahallesi"))
