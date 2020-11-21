@@ -51,8 +51,8 @@ public class Main extends ListenerAdapter {
   public static void main(String[] args) throws Exception {
     JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.2p71j1huJBdHIWT5TBeBByVX1UY", GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
-            .setStatus(OnlineStatus.ONLINE)
-           // .setActivity(Activity.watching("Cennet Mahallesi"))
+            .setStatus(OnlineStatus.INVISIBLE)
+            .setActivity(Activity.listening("serdar ortaç - poşet"))
             .build();
 
 
@@ -144,6 +144,9 @@ public class Main extends ListenerAdapter {
   @Override
   public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
     lastEvent=event;
+
+    event.getMember().getVoiceState().getChannel();
+
 
     String[] command = event.getMessage().getContentRaw().split(" ", 2);
 
@@ -304,11 +307,22 @@ public class Main extends ListenerAdapter {
 
   private static void connectToFirstVoiceChannel(AudioManager audioManager) {
     if (!audioManager.isConnected() && !audioManager.isAttemptingToConnect()) {
-      for (VoiceChannel voiceChannel : audioManager.getGuild().getVoiceChannels()) {
+    /*  for (VoiceChannel voiceChannel : audioManager.getGuild().getVoiceChannels()) {
 
         audioManager.openAudioConnection(voiceChannel);
         break;
-      }
+      }*/         //Connect first voice channel
+    if (lastEvent.getMember().getVoiceState().inVoiceChannel()){
+        lastEvent.getChannel().sendMessage("<@"+lastEvent.getMember().getId()+">"+" Geliyom 2 dk").queue();
+        audioManager.openAudioConnection(lastEvent.getMember().getVoiceState().getChannel());
+
+    }else
+        lastEvent.getChannel().sendMessage("<@"+lastEvent.getMember().getId()+">"+" sesli gel sesli bişey dicem").queue();
+
+
+
+
+
     }
   }
 }
