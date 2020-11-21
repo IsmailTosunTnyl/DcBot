@@ -326,7 +326,8 @@ public class Main extends ListenerAdapter {
         break;
       }*/         //Connect first voice channel
     if (lastEvent.getMember().getVoiceState().inVoiceChannel()){
-        lastEvent.getChannel().sendMessage("<@"+lastEvent.getMember().getId()+">"+" Geliyom 2 dk").queue();
+        if ((Math.random()*10) > 8){
+        lastEvent.getChannel().sendMessage("<@"+lastEvent.getMember().getId()+">"+" Geliyom 2 dk").queue();}
         audioManager.openAudioConnection(lastEvent.getMember().getVoiceState().getChannel());
 
     }else
