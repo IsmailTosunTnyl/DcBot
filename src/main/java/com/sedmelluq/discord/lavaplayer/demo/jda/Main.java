@@ -47,6 +47,19 @@ public class Main extends ListenerAdapter {
           new DSes(4,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02124405dvr-trim-online-audio-convertercom/s-YrRgtZf67n6"),
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02153706dvr-trim-online-audio-convertercom/s-5KhYz73LO2B")
   };
+  /*
+  * 1. biden
+  * 2.
+  * 3.HeeY
+  * 4.dıt dı dıt
+  * 5.
+  *
+  *
+  *
+  *
+  *
+  *
+  * */
 
   public static void main(String[] args) throws Exception {
     JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.GhRdEEf0gpH5iZdGfMqyx4gFaBY", GUILD_MESSAGES, GUILD_VOICE_STATES)
