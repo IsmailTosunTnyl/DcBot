@@ -49,7 +49,7 @@ public class Main extends ListenerAdapter {
   };
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create("-Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.2p71j1huJBdHIWT5TBeBByVX1UY", GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create("System.getenv("TOKEN"), GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.INVISIBLE)
             .setActivity(Activity.listening("serdar ortaç - poşet"))
