@@ -58,7 +58,22 @@ public class form extends JFrame {
 
              GuildMessageReceivedEvent event= Main.getLastEvent();
              if (event!=null){
-             String message=textField1.getText();
+                 String message=textField1.getText();
+                 String []message2=message.split(" ");
+                 message ="";
+                 if (message2[0].startsWith("@")){
+                     for (int i = 1; i <message2.length ; i++) {
+                        message = message+" "+message2[i];
+                     }
+
+
+                     event.getChannel().sendMessage("<"+message2[0]+">"+"   "+message).queue();
+                     textField1.setText("");
+                 return;
+                 }
+
+
+
              event.getChannel().sendMessage(message).queue();
              textField1.setText("");
              }

@@ -62,9 +62,9 @@ public class Main extends ListenerAdapter {
   * */
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.GhRdEEf0gpH5iZdGfMqyx4gFaBY", GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.0nq1NlsjhGChFtlGfEoDB5UMiPs", GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
-            .setStatus(OnlineStatus.INVISIBLE)
+            .setStatus(OnlineStatus.ONLINE)
             .setActivity(Activity.listening("serdar ortaç - poşet"))
             .build();
 
