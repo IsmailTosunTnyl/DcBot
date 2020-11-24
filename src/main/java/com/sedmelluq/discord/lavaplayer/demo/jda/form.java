@@ -57,7 +57,9 @@ public class form extends JFrame {
 
 
              GuildMessageReceivedEvent event= Main.getLastEvent();
+
              if (event!=null){
+
                  String message=textField1.getText();
                  String []message2=message.split(" ");
                  message ="";
@@ -69,13 +71,13 @@ public class form extends JFrame {
 
                      event.getChannel().sendMessage("<"+message2[0]+">"+"   "+message).queue();
                      textField1.setText("");
-                 return;
-                 }
+
+                 }else{
 
 
-
+             message = textField1.getText();
              event.getChannel().sendMessage(message).queue();
-             textField1.setText("");
+             textField1.setText("");}
              }
              else
                  JOptionPane.showMessageDialog(null,"Bot Event Yakalayamadı");

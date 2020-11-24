@@ -49,15 +49,16 @@ public class Main extends ListenerAdapter {
   };
   /*
   * 1. biden
-  * 2.
+  * 2. bilmiyom
   * 3.HeeY
   * 4.dıt dı dıt
-  * 5.
-  *
-  *
-  *
-  *
-  *
+  * 5. teknoloji
+  * 6.bilmillah
+  * 7.şerefsiz
+  * 8.
+  * 9.yetmedimi
+  * 10.sucuk
+  *11.memet ali bey
   *
   * */
 
@@ -170,6 +171,16 @@ public class Main extends ListenerAdapter {
 
       startTimer( event);
     }else if("d".equalsIgnoreCase(command[0]) && command.length == 2){
+
+        if (command[1].equalsIgnoreCase("8")){
+            if (!event.getMember().getId().equalsIgnoreCase("429405344683524098") ||
+                    !event.getMember().getId().equalsIgnoreCase("751901481728213112") ){
+                event.getChannel().sendMessage("<@"+event.getMember().getId()+">"+" Bu Kod Seni Aşar").queue();
+                return;
+
+            }}
+
+
       loadAndPlay(event.getChannel(),ses3[Integer.parseInt(command[1])-1].link);
       TimerTask ts2 = new TimerTask() {
         @Override
@@ -270,6 +281,7 @@ public class Main extends ListenerAdapter {
 
         System.out.println("Timer Task");
         int r = new Random().nextInt(ses3.length);
+
         loadAndPlay(event.getChannel(),ses3[r].link);
         startTimer(event);
 
