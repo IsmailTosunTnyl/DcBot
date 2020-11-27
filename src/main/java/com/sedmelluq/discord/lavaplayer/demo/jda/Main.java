@@ -34,7 +34,10 @@ public class Main extends ListenerAdapter {
  public static boolean autoMod=false;
   public  int randomNumber = 20;
 
-  public DSes[] ses3={
+  public DSes[] ses3=Token.getDsesArray();
+
+
+          /*{
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/d1/s-zMoJBAA4EAY?in=ismail-tosun-354492633/sets/dbot/s-nIKhuSChtIg"),
           new DSes(4,"https://soundcloud.com/ismail-tosun-354492633/d2/s-fIAirhE67UZ?in=ismail-tosun-354492633/sets/dbot/s-nIKhuSChtIg"),
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/d3/s-GO8hfuAzPhY?in=ismail-tosun-354492633/sets/dbot/s-nIKhuSChtIg"),
@@ -46,7 +49,7 @@ public class Main extends ListenerAdapter {
           new DSes(5,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-01531703dvr-trim-online-audio-convertercom/s-ot9Df3iI0Af"),
           new DSes(4,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02124405dvr-trim-online-audio-convertercom/s-YrRgtZf67n6"),
           new DSes(6,"https://soundcloud.com/ismail-tosun-354492633/desktop-20201121-02153706dvr-trim-online-audio-convertercom/s-5KhYz73LO2B")
-  };
+  };*/
   /*
   * 1. biden
   * 2. bilmiyom
@@ -63,10 +66,10 @@ public class Main extends ListenerAdapter {
   * */
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create("Nzc1MzUwMDM3NjQyMjE1NDQ1.X6lC_g.0nq1NlsjhGChFtlGfEoDB5UMiPs", GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create(Token.getTOKEN(), GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.ONLINE)
-            .setActivity(Activity.listening("serdar ortaç - poşet"))
+            .setActivity(Activity.watching("Mehmet Ali Erbil - Best Moments"))
             .build();
 
 

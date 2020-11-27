@@ -13,7 +13,7 @@
       <component id="73412" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="49" height="16"/>
+            <preferred-size width="130" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -75,7 +75,7 @@
       <component id="af7fa" class="javax.swing.JLabel">
         <constraints>
           <grid row="4" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="49" height="16"/>
+            <preferred-size width="130" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -99,7 +99,7 @@
       <component id="99c1" class="javax.swing.JLabel">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="49" height="16"/>
+            <preferred-size width="130" height="16"/>
           </grid>
         </constraints>
         <properties>
@@ -131,6 +131,14 @@
         </constraints>
         <properties>
           <text value="RadioButton"/>
+        </properties>
+      </component>
+      <component id="aa7f2" class="javax.swing.JButton" binding="buttonNext">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Button"/>
         </properties>
       </component>
     </children>

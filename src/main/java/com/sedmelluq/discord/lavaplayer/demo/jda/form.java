@@ -21,6 +21,7 @@ public class form extends JFrame {
     private JLabel textLabel;
     public JRadioButton autoModRadioButton;
     private JRadioButton radioButton1;
+    private JButton buttonNext;
 
 
     public form(){
