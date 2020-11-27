@@ -34,7 +34,7 @@ public class Main extends ListenerAdapter {
  public static boolean autoMod=false;
   public  int randomNumber = 20;
 
-  public DSes[] ses3=Token.getDsesArray();
+  public DSes[] ses3=null;
 
 
           /*{
@@ -66,7 +66,7 @@ public class Main extends ListenerAdapter {
   * */
 
   public static void main(String[] args) throws Exception {
-    JDABuilder.create(Token.getTOKEN(), GUILD_MESSAGES, GUILD_VOICE_STATES)
+    JDABuilder.create("", GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.ONLINE)
             .setActivity(Activity.watching("Mehmet Ali Erbil - Best Moments"))
