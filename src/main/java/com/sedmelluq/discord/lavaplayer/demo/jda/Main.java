@@ -57,7 +57,7 @@ public class Main extends ListenerAdapter {
     JDABuilder.create(Token.getTOKEN(), GUILD_MESSAGES, GUILD_VOICE_STATES)
             .addEventListeners(new Main())
             .setStatus(OnlineStatus.ONLINE)
-            .setActivity(Activity.watching("Mehmet Ali Erbil - Best Moments"))
+            .setActivity(Activity.watching("İbo Show"))
             .build();
 
 
