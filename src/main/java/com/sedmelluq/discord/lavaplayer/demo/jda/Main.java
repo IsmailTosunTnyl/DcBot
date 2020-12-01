@@ -164,8 +164,7 @@ public class Main extends ListenerAdapter {
     }else if("d".equalsIgnoreCase(command[0]) && command.length == 2){
 
         if (command[1].equalsIgnoreCase("8")){
-            if (!event.getMember().getId().equalsIgnoreCase("429405344683524098") ||
-                    !event.getMember().getId().equalsIgnoreCase("751901481728213112") ){
+            if (!event.getMember().getId().equalsIgnoreCase("751901481728213112") ){
                 event.getChannel().sendMessage("<@"+event.getMember().getId()+">"+" Bu Kod Seni Aşar").queue();
                 return;
 
