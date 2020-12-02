@@ -155,6 +155,27 @@ public class Main extends ListenerAdapter {
 
     String[] command = event.getMessage().getContentRaw().split(" ", 2);
 
+
+    if("dhelp".equalsIgnoreCase(command[0])){
+     event.getChannel().sendMessage("  1. biden\n" +
+             "   2.bilmiyom\n" +
+             "   3.HeeY\n" +
+             "   4.dıt dı dıt\n" +
+             "   5.teknoloji\n" +
+             "   6.bislmillah\n" +
+             "   7.şerefsiz\n" +
+             "   8.\n" +
+             "   9.yetmedimi\n" +
+             "   10.sucuk\n" +
+             "  11.memet ali bey\n"
+
+            ).queue();
+
+
+        return;
+
+    }
+
     if ("basla".equalsIgnoreCase(command[0])){
 
       autoMod=true;
